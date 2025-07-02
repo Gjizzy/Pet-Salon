@@ -1,0 +1,119 @@
+/* General Styles */
+body {
+    font-family: 'Quicksand', sans-serif; /* Soft and friendly body font */
+    line-height: 1.6;
+    margin: 0;
+    background-color: #f7f7f7; /* Light background */
+    color: #555; /* Neutral text color */
+}
+
+h1, h2, h3 {
+    font-family: 'Pacifico', cursive; /* Playful and unique heading font */
+    color: #333; /* Darker heading color */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Header */
+header {
+    background-color: #e0f2f7; /* Light blue, calming */
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    color: #00796b; /* Teal, fresh color */
+}
+
+nav ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+}
+
+nav li {
+    display: inline-block; /* Arrange navigation horizontally */
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none; /* Remove underline */
+    color: #00796b; /* Teal */
+    font-weight: bold;
+}
+
+/* Hero Section */
+#hero {
+    background: url('hero-background.jpg') center/cover no-repeat; /* Replace with an appealing pet image */
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay for text readability */
+    padding: 30px;
+    display: inline-block;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #ff9800; /* Orange, energetic */
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/* Services Section */
+.service-list {
+    display: flex; /* Arrange service items horizontally */
+    justify-content: space-around;
+}
+
+.service-item {
+    text-align: center;
+    width: 30%;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px;
+    background-color: #fff; /* White background */
+}
+
+/* Gallery Section */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 10px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Responsive Design (Basic Example) */
+@media (max-width: 768px) {
+    .service-list {
+        flex-direction: column; /* Stack service items on smaller screens */
+    }
+
+    .service-item {
+        width: 80%;
+        margin: 10px auto;
+    }
+}
