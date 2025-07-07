@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Pets</title>
+
+  <style>
+    body {
+      background-image: url("./images/Petimages.jpg");
+      background-size: contain;
+    }
+  </style>   
+</head>
+
+
+<body>
+    <h1 style="background-color:tomato;">Register Pets</h1>
+    <link rel="stylesheet" href="./Final Report Pet Salon.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <form action="/submit_pet_registration" method="post">
+    <label for="petName">Pet Name:</label><br>
+    <input type="text" id="petName" name="petName"><br><br>
+
+    <label for="species">Species:</label><br>
+    <select id="species" name="species">
+      <option value="dog">Dog</option>
+      <option value="cat">Cat</option>
+      <option value="other">Other</option>
+    </select><br><br>
+
+    <label for="breed">Breed:</label><br>
+    <input type="text" id="breed" name="breed"><br><br>
+
+    <label>Sex:</label><br>
+    <input type="radio" id="male" name="sex" value="male">
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="sex" value="female">
+    <label for="female">Female</label><br><br>
+
+    <label for="age">Age:</label><br>
+    <input type="number" id="age" name="age"><br><br>
+
+    <label for="ownerName">Owner Name:</label><br>
+    <input type="text" id="ownerName" name="ownerName"><br><br>
+
+    <label for="ownerEmail">Owner Email:</label><br>
+    <input type="email" id="ownerEmail" name="ownerEmail"><br><br>
+
+    <input type="submit" value="Submit">
+  </form>
+
+  <div class="pet-card">
+    
+    <h2 style="background-color:Orange;">Pet Name</h2>
+    <img src="pet_image.jpg" alt="Description of pet image">
+    <p>Species: [Species]</p>
+    <p>Breed: [Breed]</p>
+    <p>Age: [Age]</p>
+    <p>Description: [Brief description of the pet]</p>
+    </div>
+
+
+    <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Species</th>
+        <th>Breed</th>
+        <th>Age</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Pet Name 1</td>
+        <td>Dog</td>
+        <td>Labrador</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>Pet Name 2</td>
+        <td>Cat</td>
+        <td>Siamese</td>
+        <td>2</td>
+      </tr>
+      </tbody>
+  </table>
+  ```
+
+  <form method="post" action="/delete-pet">
+    <!-- Hidden input field to identify the pet to be deleted -->
+    <input type="hidden" name="pet_id" value="[PET_ID]">
+    <button type="submit">Delete</button>
+  </form>
+</body>
+</html>
